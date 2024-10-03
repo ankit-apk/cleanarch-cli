@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Architecture CLI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3498db',
+                        secondary: '#2ecc71',
+                        accent: '#e74c3c',
+                        background: '#ecf0f1',
+                        text: '#2c3e50',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="flex flex-col min-h-screen bg-background text-text">
+    <header class="px-4 lg:px-8 py-4 h-16 flex items-center bg-primary text-white">
+        <a class="flex items-center justify-center" href="#">
+            <i class="lucide-terminal h-6 w-6"></i>
+            <span class="sr-only">Clean Architecture CLI</span>
+        </a>
+        <nav class="ml-auto flex gap-6 sm:gap-8">
+            <a class="text-sm font-medium hover:underline underline-offset-4" href="#features">Features</a>
+            <a class="text-sm font-medium hover:underline underline-offset-4" href="#quickstart">Quick Start</a>
+            <a class="text-sm font-medium hover:underline underline-offset-4" href="#about">About</a>
+        </nav>
+    </header>
+    <main class="flex-1">
+        <section class="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-primary to-secondary text-white">
+            <div class="container px-4 md:px-6 mx-auto">
+                <div class="flex flex-col items-center space-y-4 text-center">
+                    <div class="space-y-2">
+                        <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                            Clean Architecture CLI
+                        </h1>
+                        <p class="mx-auto max-w-[700px] md:text-xl">
+                            Quickly generate Go projects with a Clean Architecture structure, using Fiber and MongoDB
+                            Atlas.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <button
+                            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-primary hover:bg-opacity-90 h-10 px-4 py-2">
+                            Get Started
+                            <i class="lucide-arrow-right ml-2 h-4 w-4"></i>
+                        </button>
+                        <button
+                            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-white bg-transparent hover:bg-white hover:text-primary h-10 px-4 py-2">
+                            View on GitHub
+                            <i class="lucide-github ml-2 h-4 w-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="features" class="w-full py-12 md:py-24 lg:py-32 bg-white">
+            <div class="container px-4 md:px-6 mx-auto">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Key Features</h2>
+                <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="flex flex-col items-center space-y-4 text-center">
+                        <i class="lucide-layout h-12 w-12 text-primary"></i>
+                        <h3 class="text-xl font-bold">Clean Architecture</h3>
+                        <p class="text-gray-500">Generate projects with a robust, scalable architecture.</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-4 text-center">
+                        <i class="lucide-code h-12 w-12 text-primary"></i>
+                        <h3 class="text-xl font-bold">Fiber Framework</h3>
+                        <p class="text-gray-500">Utilizes the fast and efficient Fiber web framework.</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-4 text-center">
+                        <i class="lucide-database h-12 w-12 text-primary"></i>
+                        <h3 class="text-xl font-bold">MongoDB Atlas</h3>
+                        <p class="text-gray-500">Integrated with MongoDB Atlas for seamless database operations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="quickstart" class="w-full py-12 md:py-24 lg:py-32 bg-background">
+            <div class="container px-4 md:px-6 mx-auto">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Quick Start</h2>
+                <div class="max-w-2xl mx-auto space-y-4">
+                    <p class="text-gray-500">Get up and running with Clean Architecture CLI in minutes:</p>
+                    <pre class="bg-white p-4 rounded-lg overflow-x-auto">
+                        <code class="text-sm sm:text-base">
+# Install Clean Architecture CLI
+go install github.com/yourusername/clean-architecture-cli@latest
+
+# Generate a new project
+clean-architecture-cli new myproject
+
+# Navigate to your project
+cd myproject
+
+# Run your project
+go run main.go
+                        </code>
+                    </pre>
+                    <p class="text-gray-500">
+                        For more detailed instructions and configuration options, please refer to our GitHub repository.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="w-full py-12 md:py-24 lg:py-32 bg-primary text-white">
+            <div class="container px-4 md:px-6 mx-auto">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">About the Project</h2>
+                <div class="max-w-3xl mx-auto space-y-4 text-center">
+                    <p>
+                        Clean Architecture CLI is an open-source project aimed at simplifying the process of creating Go
+                        applications with a clean and maintainable architecture. Our goal is to help developers quickly
+                        bootstrap
+                        projects that are scalable, testable, and adhere to best practices in software design.
+                    </p>
+                    <p>
+                        We welcome contributions from the community! Whether you're fixing bugs, improving
+                        documentation, or proposing new features, your input is valuable. Check out our GitHub
+                        repository to get involved.
+                    </p>
+                    <button
+                        class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-white bg-transparent hover:bg-white hover:text-primary h-10 px-4 py-2">
+                        Contribute on GitHub
+                        <i class="lucide-github ml-2 h-4 w-4"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer
+        class="flex flex-col sm:flex-row py-6 w-full shrink-0 items-center justify-between px-4 md:px-6 border-t bg-text text-white">
+        <p class="text-xs">© 2024 Clean Architecture CLI. All rights reserved.</p>
+        <nav class="flex gap-4 sm:gap-6 mt-4 sm:mt-0">
+            <a class="text-xs hover:underline underline-offset-4" href="#">Terms of Service</a>
+            <a class="text-xs hover:underline underline-offset-4" href="#">Privacy</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
