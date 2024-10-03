@@ -28,7 +28,7 @@ To install the Clean Architecture CLI, follow these steps:
 
 1. Clone the repository:
 ```
-git clone https://github.com/yourusername/cleanarch-cli.git
+git clone https://github.com/ankit-apk/cleanarch-cli.git
 ```
 
 
